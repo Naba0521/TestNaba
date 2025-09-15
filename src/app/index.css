@@ -1,0 +1,320 @@
+/* Main Container Styles */
+#container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+}
+
+#con {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+/* Header Styles */
+#header-con {
+  padding: 40px 30px 30px;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  text-align: center;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Input Container Styles */
+#input-container {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+#input-container input {
+  flex: 1;
+  padding: 16px 20px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 16px;
+  background: white;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+#input-container input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  transform: translateY(-1px);
+}
+
+#input-container input::placeholder {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+#input-container button {
+  padding: 16px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+#input-container button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+#input-container button:active {
+  transform: translateY(0);
+}
+
+/* Filter Container Styles */
+#filter-container {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.butt {
+  padding: 12px 20px;
+  border: 2px solid #e2e8f0;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: white;
+  min-width: 80px;
+}
+
+.butt:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.butt:active {
+  transform: translateY(0);
+}
+
+/* Task List Styles */
+.ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  border-bottom: 1px solid #f1f5f9;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.ul:hover {
+  background: #f8fafc;
+  transform: translateX(5px);
+}
+
+.ul:last-child {
+  border-bottom: none;
+}
+
+.li {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 12px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cbd5e1;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  appearance: none;
+  background: white;
+  position: relative;
+}
+
+.checkbox:checked {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: #667eea;
+}
+
+.checkbox:checked::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.checkbox:hover {
+  border-color: #667eea;
+  transform: scale(1.1);
+}
+
+.li span {
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  flex: 1;
+}
+
+/* Delete Button Styles */
+.deletetask {
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.deletetask:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+.deletetask:active {
+  transform: translateY(0);
+}
+
+/* Empty State Styles */
+.midlle {
+  text-align: center;
+  padding: 60px 30px;
+  color: #64748b;
+  font-size: 18px;
+  font-weight: 500;
+  background: white;
+  border-radius: 0 0 20px 20px;
+}
+
+/* Footer Styles */
+#footer-con {
+  padding: 20px 30px;
+  text-align: center;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+#footer-con a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+#footer-con a:hover {
+  color: #764ba2;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  #container {
+    padding: 10px;
+  }
+
+  #con {
+    border-radius: 15px;
+  }
+
+  #header-con {
+    padding: 30px 20px 20px;
+  }
+
+  #title {
+    font-size: 2rem;
+  }
+
+  #input-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #input-container input,
+  #input-container button {
+    width: 100%;
+  }
+
+  .ul {
+    padding: 15px 20px;
+  }
+
+  #filter-container {
+    gap: 6px;
+  }
+
+  .butt {
+    padding: 10px 16px;
+    font-size: 13px;
+    min-width: 70px;
+  }
+}
+
+/* Animation for new tasks */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ul {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+/* Smooth transitions for state changes */
+* {
+  transition: all 0.3s ease;
+}
